@@ -59,7 +59,7 @@ if uploaded_files:
                     """
                     
                     # 텍스트와 이미지 리스트를 함께 전송
-                    response = model.generate_content([prompt] + analyze_images)
+                    response = model.generate_content(analyze_images + [prompt])
                     
                     st.markdown("### 💌 우리 반에게 보내는 편지")
                     st.write(response.text)
