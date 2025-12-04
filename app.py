@@ -15,7 +15,7 @@ except FileNotFoundError:
     st.stop()
 
 genai.configure(api_key=GOOGLE_API_KEY)
-model = genai.GenerativeModel('gemini-1.5-flash-latest')
+model = genai.GenerativeModel('gemini-pro-vision')
 
 # --- 제목 ---
 st.title("🏫 우리 반 한 학기 추억 모음")
